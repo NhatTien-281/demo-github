@@ -1,0 +1,122 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+    .portfolio-wrapper {
+        font-family: 'Poppins', sans-serif;
+        background: #111111; /* Deeper dark background */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px;
+        min-height: 500px;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .yellow-corner {
+        position: absolute;
+        left: -50px;
+        top: -50px;
+        width: 250px;
+        height: 250px;
+        background: #fdb91a;
+        transform: rotate(-15deg);
+        border-radius: 40px;
+        z-index: 0;
+    }
+
+    .content-box {
+        display: flex;
+        z-index: 1;
+        width: 100%;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .img-container {
+        flex: 0 0 300px;
+        height: 450px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-container {
+        flex: 1;
+    }
+
+    .name-line {
+        font-size: 38px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .job-line {
+        font-size: 38px;
+        font-weight: 700;
+        margin-top: -5px;
+        margin-bottom: 25px;
+    }
+
+    .highlight { color: #fdb91a; }
+
+    .bio {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #ddd;
+        max-width: 450px;
+        margin-bottom: 30px;
+    }
+
+    .custom-btn {
+        display: inline-flex;
+        align-items: center;
+        border: 2px solid #fdb91a;
+        border-radius: 40px;
+        padding: 5px 5px 5px 25px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .btn-circle {
+        background: #fdb91a;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #111;
+    }
+</style>
+
+<div class="portfolio-wrapper">
+    <div class="yellow-corner"></div>
+    <div class="content-box">
+        <div class="img-container">
+            <img src="avatar.jpeg" onerror="this.src='avatar.jpeg">
+        </div>
+        <div class="text-container">
+            <div class="name-line"><span class="highlight">—</span> I'M STEVE MILNER.</div>
+            <div class="job-line">WEB DESIGNER</div>
+            <p class="bio">
+                I'm a Tunisian based web designer & front-end developer focused on crafting clean & user-friendly experiences. I am passionate about building software that improves lives.
+            </p>
+            <a href="#" class="custom-btn">
+                MORE ABOUT ME
+                <div class="btn-circle">→</div>
+            </a>
+        </div>
+    </div>
+</div>
